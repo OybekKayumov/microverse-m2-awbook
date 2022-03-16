@@ -2,4 +2,168 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: 'Permanent Marker', cursive;
+  background-color: #2e8b57;
+  padding: 20px;
+  color: #fff;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: unset;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 3px solid #fff;
+  margin-bottom: 26px;
+  border-radius: 8px;
+}
+
+.date {
+  width: 100%;
+  margin: 14px 0;
+  text-align: right;
+}
+
+.home {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+}
+
+.links .active {
+  padding-bottom: 6px;
+  border-right: 3px solid #ec4353;
+}
+
+.links a:not(.active):hover {
+  border-right: 3px solid #fff;
+}
+
+.books-list {
+  border: 3px #fff solid;
+  border-radius: 8px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.books-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.books-list li:nth-child(odd) {
+  background-color: #aabbc1;
+}
+
+.books-list li:nth-child(even) {
+  background-color: #cd9b9b;
+}
+
+button {
+  cursor: pointer;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  background-color: #d3d3d3;
+  color: #333;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.form-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  margin: 50px 0 20px 0;
+  width: 50%;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  background-color: #d3d3d3;
+  color: #333;
+  font-size: 18px;
+}
+
+.add-book-btn {
+  float: right;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.contact p {
+  margin: 50px 0 20px 0;
+}
+
+.info {
+  list-style: circle;
+}
+
+.flex {
+  display: flex;
+}
+
+#message {
+  margin-top: 10px;
+  color: gold;
+}
+
+footer {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  padding: 10px 40px;
+  margin: 10px;
 }
