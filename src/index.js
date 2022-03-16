@@ -51,15 +51,17 @@ const renderBooks = () => {
 
 renderBooks();
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+window.addEventListener('DOMContentLoaded', () => {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-  const title = form.title.value;
-  const author = form.author.value;
+    const title = form.title.value;
+    const author = form.author.value;
 
-  form.title.value = '';
-  form.author.value = '';
+    form.title.value = '';
+    form.author.value = '';
 
-  booksList.addBook({ title, author });
-  renderBooks();
+    booksList.addBook({ title, author });
+    renderBooks();
+  });
 });
