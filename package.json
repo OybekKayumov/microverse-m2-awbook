@@ -1,0 +1,23 @@
+{
+  "name": "microverse-m2-awbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OybekKayumov/microverse-m2-awbook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OybekKayumov/microverse-m2-awbook/issues"
+  },
+  "homepage": "https://github.com/OybekKayumov/microverse-m2-awbook#readme",
+  "devDependencies": {
+    "hint": "^6.1.10"
+  }
+}
