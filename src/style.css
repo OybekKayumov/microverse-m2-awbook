@@ -24,7 +24,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   margin-bottom: 26px;
   border-radius: 8px;
 }
@@ -37,13 +37,11 @@ header {
 
 .home {
   display: none;
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  border: 4px #fff solid;
   width: 70%;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 40px;
 }
 
@@ -58,14 +56,16 @@ header h1 {
 
 .links .active {
   padding-bottom: 6px;
-  border-right: 3px solid #ec5242;
+  border-right: 3px solid #ec4353;
 }
 
 .links a:not(.active):hover {
-  border-right: 4px solid #fff;
+  border-right: 3px solid #fff;
 }
 
 .books-list {
+  border: 3px #fff solid;
+  border-radius: 8px;
   margin: 20px 0;
   width: 100%;
 }
@@ -86,13 +86,26 @@ header h1 {
   background-color: #cd9b9b;
 }
 
+button {
+  cursor: pointer;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  background-color: #d3d3d3;
+  color: #333;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
 button:active {
   transform: scale(0.9);
 }
 
 .form-container {
   display: none;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -105,7 +118,8 @@ form {
 form input {
   width: 100%;
   padding: 10px;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
+  border-radius: 8px;
   background-color: #d3d3d3;
   color: #333;
   font-size: 18px;
@@ -116,7 +130,6 @@ form input {
 }
 
 .contact {
-  display: flex;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -144,7 +157,8 @@ footer {
   right: 0;
   left: 0;
   height: 60px;
-  border: 4px solid #fff;
-  padding: 15px 30px;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  padding: 10px 40px;
   margin: 10px;
 }
