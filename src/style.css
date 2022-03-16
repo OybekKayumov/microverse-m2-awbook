@@ -96,3 +96,55 @@ button:active {
   flex-direction: column;
   align-items: center;
 }
+
+form {
+  margin: 50px 0 20px 0;
+  width: 50%;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #d3d3d3;
+  color: #333;
+  font-size: 18px;
+}
+
+.add-book-btn {
+  float: right;
+}
+
+.contact {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.contact p {
+  margin: 50px 0 20px 0;
+}
+
+.info {
+  list-style: circle;
+}
+
+.flex {
+  display: flex;
+}
+
+footer {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  border: 4px solid #fff;
+  padding: 15px 30px;
+  margin: 10px;
+}
