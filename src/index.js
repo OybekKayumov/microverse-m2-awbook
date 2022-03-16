@@ -1,6 +1,6 @@
 const listItem = document.querySelector('.books-list');
 const form = document.querySelector('.form');
-
+const msg = document.querySelector('#message');
 class Books {
   constructor() {
     this.list = localStorage.getItem('booksStore')
@@ -10,6 +10,7 @@ class Books {
 
   addBook(book) {
     this.list.push(book);
+    msg.innerHTML = `Book ${book.title} added successfully`;
 
     localStorage.setItem('booksStore', JSON.stringify(this.list));
   }
@@ -30,7 +31,7 @@ const renderBooks = () => {
     listItem.innerHTML += `
         <li>
           <p>"<span class="title">${book.title}</span>" by ${book.author}</p>
-          <button class="removeBtn">Remove</button>
+          <button class="removeBtn">Remove</button>          
         </li>
     `;
   });
@@ -60,6 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     form.title.value = '';
     form.author.value = '';
+    msg.textContent = '';
 
     booksList.addBook({ title, author });
     renderBooks();

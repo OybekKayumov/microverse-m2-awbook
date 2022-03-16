@@ -149,6 +149,11 @@ form input {
   display: flex;
 }
 
+#message {
+  margin-top: 10px;
+  color: gold;
+}
+
 footer {
   position: absolute;
   font-size: 22px;
