@@ -2,4 +2,97 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: 'Permanent Marker', cursive;
+  background-color: #2e8b57;
+  padding: 20px;
+  color: #fff;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: unset;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid #fff;
+  margin-bottom: 26px;
+  border-radius: 8px;
+}
+
+.date {
+  width: 100%;
+  margin: 14px 0;
+  text-align: right;
+}
+
+.home {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border: 4px #fff solid;
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+}
+
+.links .active {
+  padding-bottom: 6px;
+  border-right: 3px solid #ec5242;
+}
+
+.links a:not(.active):hover {
+  border-right: 4px solid #fff;
+}
+
+.books-list {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.books-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.books-list li:nth-child(odd) {
+  background-color: #aabbc1;
+}
+
+.books-list li:nth-child(even) {
+  background-color: #cd9b9b;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.form-container {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
