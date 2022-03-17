@@ -22,9 +22,9 @@ class Books {
     localStorage.setItem('booksStore', JSON.stringify(this.list));
   }
 
-  // addMessage(msg, book) {
-  //   // msg.innerHTML = `Book ${this.list} by ${this.list} added successfully!`;
-  //   msg.innerHTML = `Book ${this.list.title} added successfully!`;
+  // addMessage(book) {
+  // msg.innerHTML = `Book ${this.list} by ${this.list} added successfully!`;
+  // this.message.innerHTML = `Book ${book.title} by ${book.author} added successfully!`;
   // }
 }
 
@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
     msg.textContent = '';
 
     booksList.addBook({ title, author });
-    // booksList.addMessage(msg);
+    // booksList.addMessage();
     renderBooks();
   });
 });
