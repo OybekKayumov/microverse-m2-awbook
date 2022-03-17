@@ -10,7 +10,8 @@ class Books {
 
   addBook(book) {
     this.list.push(book);
-    msg.innerHTML = `Book ${book.title} added successfully`;
+
+    msg.innerHTML = `Book "${book.title}" by ${book.author} added successfully!`;
 
     localStorage.setItem('booksStore', JSON.stringify(this.list));
   }
@@ -20,6 +21,11 @@ class Books {
 
     localStorage.setItem('booksStore', JSON.stringify(this.list));
   }
+
+  // addMessage(msg, book) {
+  //   // msg.innerHTML = `Book ${this.list} by ${this.list} added successfully!`;
+  //   msg.innerHTML = `Book ${this.list.title} added successfully!`;
+  // }
 }
 
 const booksList = new Books();
@@ -40,7 +46,6 @@ const renderBooks = () => {
   removeBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
       const element = btn.parentNode; // <li> </li>
-      // console.log('element: ', element);
       const bookTitle = element.querySelector('.title').textContent;
 
       booksList.removeBook(bookTitle);
@@ -64,6 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
     msg.textContent = '';
 
     booksList.addBook({ title, author });
+    // booksList.addMessage(msg);
     renderBooks();
   });
 });
