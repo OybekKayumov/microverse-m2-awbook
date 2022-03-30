@@ -2,11 +2,11 @@
 
 > This project is about building Awsome Books using javascript
 
-![Awesome Books design (20)](Screenshot.png)
+![Awesome Books design (20)](https://user-images.githubusercontent.com/85465559/160862298-9e64f00b-6f30-42be-b92f-092acf6722ab.png)
 
 ## Live demo
 
-[Live Demo Link]()
+[Live Demo Link](https://oybekkayumov.github.io/microverse-m2-awbook/)
 
 ## Built With
 
