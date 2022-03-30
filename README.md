@@ -1,4 +1,4 @@
-# microverse-m2-Awesome-books
+# microverse-m2-Awesome-Books
 
 > This project is about building Awsome Books using javascript
 
