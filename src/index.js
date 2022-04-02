@@ -21,11 +21,6 @@ class Books {
 
     localStorage.setItem('booksStore', JSON.stringify(this.list));
   }
-
-  // addMessage(book) {
-  // msg.innerHTML = `Book ${this.list} by ${this.list} added successfully!`;
-  // this.message.innerHTML = `Book ${book.title} by ${book.author} added successfully!`;
-  // }
 }
 
 const booksList = new Books();
@@ -69,7 +64,13 @@ window.addEventListener('DOMContentLoaded', () => {
     msg.textContent = '';
 
     booksList.addBook({ title, author });
-    // booksList.addMessage();
     renderBooks();
+
+    setTimeout(() => {
+      msg.innerHTML = 'See it in "List" section';
+      setTimeout(() => {
+        msg.innerHTML = '';
+      }, 3000);
+    }, 3000);
   });
 });
